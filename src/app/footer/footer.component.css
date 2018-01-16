@@ -1,0 +1,141 @@
+#footer{
+    background-image: url('../../assets/Images/cover.jpg');
+    height: 500px;
+}
+section b{
+    color: #7ed321;
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px 2px white;
+    margin-bottom: 20px;
+}
+
+.contain-top{
+    margin-top: 30px;
+    float: left;
+}
+.contain-top p{
+    color: gray;
+    padding-top:15px;
+}
+.contain-top a{
+    line-height: 30px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contain-top a:hover{
+    color: white;
+}
+
+.detail>a{
+    display: none;
+}
+.icon{
+    position: relative;
+    padding: 0;
+}
+.icon img{
+    background-color: white;
+    cursor: pointer;
+    width: 80%;
+    margin: 20% 20% 0 0;    
+   
+}
+.partner .icon .blur-icon{
+    background-color: black;
+    opacity: 0.6;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+.partner .icon:hover .blur-icon{
+    display: none;
+}
+
+
+.social .icon img{
+    border-radius: 20%;
+    background: none;
+}
+
+
+.contain-bot{
+    margin-top: 50px;
+    float: left;
+}
+.contain-bot p{
+    color: white;
+    padding-top:20px;
+}
+.contain-bot .logo img{
+    width: 80%;
+}
+
+@media screen and (max-width:768px){   
+    .partner{
+        display: none;
+    }
+    .detail, .social, .cskh, .contain-bot p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .detail b, .social b, .cskh b, .contain-bot b{
+        font-size: 14px;
+        text-shadow: 1px 1px 2px white;
+    }
+    .detail p, .social p, .cskh p, .contain-bot p{
+        padding-top:10px;
+        margin:0;
+    }
+    .social .icon img{
+        width: 60%;
+        margin: 25% 30% 0 0;
+    }
+
+    .contain-bot{
+        margin-top: 15px;
+    }
+    .contain-bot .logo{
+        padding: 0;
+    }
+    .contain-bot .logo:first-child img{
+        width: 40%;
+        margin: 10px 30%;
+    }
+    .contain-bot .logo:last-child img{
+        margin-top: 15px;
+    }
+    
+        
+}
+@media screen and (max-width:500px){
+    footer{
+        height: 610px;
+    }
+    .social .icon{
+        margin: 0;
+    }
+    .contain-bot{
+        margin-top: 0px;
+    }
+    .contain-bot .logo:last-child img{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:350px) {
+    .detail>a{
+        display: block;
+    }
+    .detail p{
+        display: none;
+    }
+    .cskh>p:nth-child(1) {
+        display: none;
+    }
+}

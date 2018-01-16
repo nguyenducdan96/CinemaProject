@@ -1,0 +1,102 @@
+#home-news {
+  margin-bottom: 50px;
+}
+
+#home-news .title {
+  height: 150px;
+  font-size: 25px;
+  color: #7ed321;
+  font-weight: bold;
+  text-align: center;
+  padding: 70px 0 30px 0;
+}
+
+#home-news .news-item {
+  padding-bottom: 30px;
+}
+
+#home-news .news-item .contain {
+  padding-left: 30px;
+}
+
+#home-news .news-item .contain b {
+  color: #7ed321;
+  font-size: 20px;
+}
+
+#home-news .news-item .contain i {
+  color: white;
+  width: 50px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#home-news .news-item .contain .fa-eye {
+  background-color: #565d69;
+}
+
+#home-news .news-item .contain .fa-thumbs-up {
+  background-color: #4080ff;
+  margin-left: 20px;
+}
+
+#home-news .news-item .contain p {
+  color: #565d69;
+  height: 80px;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: justify;
+}
+
+#home-news .news-item .contain a {
+  color: #7ed321;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#home-news .news-item .contain a:hover {
+  font-weight: bold;
+}
+
+#home-news button {
+  margin-top: 20px;
+  background-color: #7ed321;
+  border: 1.5px solid #7ed321;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+#home-news button:hover {
+  border: 1.5px solid #7ed321;
+  background-color: white;
+  color: #7ed321;
+}
+
+@media screen and (max-width:767px) {
+  #home-news button {
+    width: 40%;
+    margin-left: 30%;
+  }
+  #home-news .news-item .contain {
+    padding: 10px 15px;
+  }
+  #home-news .news-item .contain b {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  #home-news button {
+    width: 70%;
+    margin-left: 15%;
+  }
+  #home-news .news-item .contain b {
+    font-size: 15px;
+  }
+  #home-news .news-item .contain p {
+    font-size: 12px;
+    height: 75px;
+  }
+}

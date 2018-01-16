@@ -1,0 +1,160 @@
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.block {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.mainDetail {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+.bgBlur {
+  background: linear-gradient(to top, #0a2029, transparent);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bgMain {
+  background: #0a2029;
+  padding-bottom: 80px;
+}
+
+.filmDetail {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+}
+
+.maxWidth {
+  max-width: 870px;
+  float: none;
+  margin: auto;
+  clear: both;
+}
+
+.bgPoster {
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+}
+
+.imgFilm {
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .5);
+}
+
+.infoFilm {
+  float: none;
+  clear: both;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+  color: #fff;
+}
+
+.limit-age {
+  margin-right: 6px;
+  margin-top: 6px;
+  float: left;
+  background-color: #fb4226;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btnBuy {
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  background: 0 0;
+  padding: 7px 25px;
+  transition: all .2s;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background-color: #7ed321;
+  border: none;
+  color: #fff;
+}
+
+.btnBuy:hover {
+  color: #7ed321;
+  background-color: #FFF;
+}
+
+.btnBuy:focus {
+  outline: none;
+}
+
+.titleContent {
+  transform: translate(0, -40px);
+  z-index: 2;
+  position: relative;
+  color: white;
+}
+
+.nav-tabs {
+  text-align: center;
+  border: none;
+  margin-bottom: 0;
+}
+
+.nav-tabs li {
+  display: inline-block;
+  float: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.nav-tabs li a {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.nav-tabs li a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  background-color: transparent;
+  border: none;
+  color: #7ed321;
+}

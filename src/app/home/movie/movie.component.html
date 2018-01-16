@@ -1,0 +1,260 @@
+<div class="row" id="home-movie">
+  <div class="col-xs-offset-1 col-xs-10 block">
+    <ul class="nav nav-tabs nav-center">
+      <li class="active">
+        <a href="#now-showing" data-toggle="tab">Phim Đang Chiếu</a>
+      </li>
+      <li>
+        <a href="#coming-show" data-toggle="tab">Phim Sắp Chiếu</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Phim đang chiếu -->
+      <div id="now-showing" class="wrapMovie tab-pane fade in active">
+        <div *ngFor="let movie of listMovie">
+          <figure>
+            <div class="border-img">
+              <img [src]="urlHost + movie.Image" class="img-responsive img-rounded">
+              <div class="bg-img"></div>
+            </div>
+            <figcaption>
+              <div>
+                <p>{{movie.Title}}</p>
+                <a [routerLink]="['/movie']" [queryParams]="{id:movie.ID,groupid:groupID}">Mua Vé</a>
+              </div>
+              <i>120 phút - {{movie.Rating}}.0 IMDb</i>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- Phim sắp chiếu -->
+      <div id="coming-show" class="wrapMovie tab-pane fade">
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/coco.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 24/11 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Coco</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/victoria-and-abdul.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 24/11 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Victoria And Abdul - Nữ Hoàng Và Tri Kỷ</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/promise.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 24/11 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Promise - Giao Ước Chết</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/the-snowman.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 24/11 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>The Snowman</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/manhunt.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 24/11 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Manhunt - Thiên la Địa Võng</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/no-game-no-life-zero.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 24/11 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>No Game, No Life: Zero - Trò Chơi Sinh Tử: Điểm Bắt Đầu</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/murder-on-the-orient-express.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 01/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Murder On The Orient Express</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/me-chong.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 01/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Mẹ Chồng</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/lino-va-7-kiep-nan.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 01/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Lino Và 7 Kiếp Nạn</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/wonder-wheel.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 01/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Wonder Wheel - Vòng Xoay Cám Dỗ</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/daddy-s-home-2.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 08/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Daddy's Home 2 - Bố Ngoan, Bố Hư 2</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/the-american-dream.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 08/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>The American Dream - Giấc Mơ Mỹ</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/loi-bao.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 22/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Lôi Báo</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <div class="border-img">
+              <img src="assets/Images/will_show/star-wars-the-last-jedi.jpg" class="img-responsive img-rounded ">
+              <div class="bg-img"></div>
+              <span class="show-day"> 22/12 </span>
+            </div>
+            <figcaption>
+              <div>
+                <p>Star Wars: The Last Jedi - Star Wars: Jedi Cuối Cùng</p>
+                <a>Mua Vé</a>
+              </div>
+              <i>120 phút</i>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

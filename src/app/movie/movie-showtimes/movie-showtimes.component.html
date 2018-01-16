@@ -1,0 +1,74 @@
+<div class="row" id="showtimes-content">
+  <div class="col-xs-3 block">
+    <ul class="nav nav-tabs group-cinema">
+      <li class="active">
+        <a data-toggle="tab">
+          <img src="assets/Images/cinema_logo/bhd.png">
+          <p>BHD Star</p>
+        </a>
+      </li>
+      <li>
+        <a data-toggle="tab">
+          <img src="assets/Images/cinema_logo/cgv.png">
+          <p>CGV - Cinemas</p>
+        </a>
+      </li>
+      <li>
+        <a data-toggle="tab">
+          <img src="assets/Images/cinema_logo/galaxycine_icon.png">
+          <p>Galaxy Cinema</p>
+        </a>
+      </li>
+      <li>
+        <a data-toggle="tab">
+          <img src="assets/Images/cinema_logo/lotte_icon.png">
+          <p>Lotte Cinema</p>
+        </a>
+      </li>
+      <li>
+        <a data-toggle="tab">
+          <img src="assets/Images/cinema_logo/cinestar_icon.png">
+          <p>CineStar</p>
+        </a>
+      </li>
+      <li>
+        <a data-toggle="tab">
+          <img src="assets/Images/cinema_logo/Mega.png">
+          <p>Mega GS</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-xs-9 block">
+    <div class="group-booking">
+      <div class="row">
+        <ul class="nav nav-tabs wrap-day">
+          <li *ngFor="let day of showDate; index as i" [ngClass]="{active:i===0}">
+            <a data-toggle="tab" (click)="GetShowTime(day)">{{day}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row wrap-booking">
+        <div class="wrap-movie">
+          <div class="cinema-info">
+            <img src="assets/Images/cinema_small/cgv-vincom-dong-khoi.jpg" class="cinema-img">
+            <div class="wrap-info">
+              <p class="head-info">
+                <span style="color:#7ed321 ">BHD</span> -
+                <b>Bitexco</b>
+              </p>
+              <p class="address-info">Tầng 3, Bitexco, 2 Hải Triều, Q.1</p>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-showtime">
+          <img src="assets/Images/2D.png" class="version-icon">
+          <div class="sessions">
+            <div class="session" *ngFor="let time of showTime" [routerLink]="['/checkout']" [queryParams]="{showtimeid:time.ShowTimeID,movieid:movieDetail.ID}">{{time.StartDate | slice:0:5}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

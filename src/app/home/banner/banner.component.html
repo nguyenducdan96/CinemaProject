@@ -1,0 +1,44 @@
+<div class="row" id="banner">
+  <div class="col-xs-12 block">
+    <div class="wrapBanner">
+      <img src="assets/Images/justice-league-slider.jpg" alt="League of Justice" class="img-responsive">
+      <img src="assets/Images/moutain-between-us-slider.jpg" alt="The Moutain Between Us" class="img-responsive">
+      <img src="assets/Images/coba_slider.jpg" alt="Cô Ba Sài Gòn" class="img-responsive">
+      <img src="assets/Images/jungel_slider.jpg" alt="Hiểm Họa Rừng Chết" class="img-responsive">
+    </div>
+    <div class="form-box" id="buy-now">
+      <form class="form-inline">
+        <div class="form-group col-sm-offset-1 col-md-3 col-sm-5 col-xs-12">
+          <select #id (change)="getIDMovie(id.value)" name="selectPhim" id="selectPhim" class="form-control select-group">
+            <option>Chọn Phim</option>
+            <option *ngFor="let movie of listMovie" [value]="movie.ID">{{movie.Title}}</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2 col-sm-5 col-xs-12">
+          <select name="selectRap" id="selectRap" class="form-control select-group">
+            <option>Chọn Rạp</option>
+            <option>BHD Star Bitexco</option>
+          </select>
+        </div>
+        <div class="select-box col-md-3">
+          <div class="form-group col-md-offset-0 col-md-6 col-sm-offset-1 col-sm-5 col-xs-12">
+            <select #day (change)="getShowTime(day.value)" name="selectNgay" id="selectNgay" class="form-control select-group">
+              <option>Chọn Ngày</option>
+              <option *ngFor="let day of showDate" [value]="day">{{day}}</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 col-sm-5 col-xs-12">
+            <select #time (change)="getShowTimeID(time.value)" name="selectSuat" id="selectSuat" class="form-control select-group">
+              <option>Chọn Suất</option>
+              <option *ngFor="let time of showTime" [value]="time.ShowTimeID">{{time.StartDate | slice:0:5}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="btn-box col-md-2 col-xs-12">
+          <button type="submit" class="btn btn-quickbuy" [routerLink]="['/booking']" [queryParams]="{showtimeid:showTimeID,movieid:movieDetail.ID}">
+            <i class="fa fa-usd"> </i> Mua Vé</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

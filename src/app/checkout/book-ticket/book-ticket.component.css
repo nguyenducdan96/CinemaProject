@@ -1,0 +1,192 @@
+.logo-booking {
+  padding-right: 0px;
+}
+
+.logo-booking img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.topContent h5 {
+  color: #fd6500;
+  font-size: 18px;
+}
+
+.topContent p {
+  color: #605f5f;
+}
+
+.timeBooking {
+  text-align: center;
+}
+
+.timeBooking h6 {
+  color: #666665;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.timeBooking p {
+  color: #fd6500;
+  font-size: 20px;
+}
+
+.screen img {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.listSeat {
+  padding: 0px 29%;
+  height: auto;
+}
+
+.seatAvaible,
+.seatSelected,
+.seatDisable {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  float: left;
+  margin-right: 5px;
+}
+
+.seatSelected {
+  background-color: #01c73c;
+  border: none;
+}
+
+.seatDisable {
+  background-color: #bbb;
+  border: none;
+}
+
+.seat-note i {
+  color: #bbbbbb;
+  font-size: 21px;
+  float: left;
+  margin-right: 5px;
+}
+
+.seat-note {
+  float: left;
+  width: 19%;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.seat-note:last-child {
+  width: 25%;
+}
+
+.note {
+  margin-top: 20px;
+}
+
+#checkout .contentleft {
+  padding-top: 20px;
+}
+
+#rightcheckout {
+  right: 0;
+  top: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  height: 100%;
+}
+
+#rightcheckout .total {
+  position: relative;
+  border-bottom: 1px dashed black;
+  height: 80px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 36px;
+  color: #7ed321 !important;
+}
+
+#rightcheckout .filmname {
+  float: left;
+  padding-left: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+#rightcheckout .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#rightcheckout .limit-age {
+  background-color: #FB4226;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0 5px;
+  float: left;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+#rightcheckout.contentfullright {
+  height: 100%;
+  padding-bottom: 120px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#seatPrice,
+#priceCombo {
+  text-align: right;
+  color: #7ed321 !important;
+}
+
+#rightcheckout .filmInfo,
+#rightcheckout .seatInfo,
+#rightcheckout .comboInfo {
+  border-bottom: 1px dashed black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#rightcheckout .info {
+  padding-left: 0;
+}
+
+#rightcheckout .typeCombo {
+  background: #e9e9e9;
+  border: none;
+}
+
+#rightcheckout .typeCombo:focus {
+  outline: none;
+}
+
+#rightcheckout .filmImg {
+  width: 58px;
+  float: left;
+}
+
+.buyInfo {
+  padding: 0;
+}
+
+.btn-buyticket {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  height: 70px;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  color: #E9E9E9 !important;
+  background-image: linear-gradient(223deg, #B4EC51 0%, #429321 100%);
+}

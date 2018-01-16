@@ -1,0 +1,22 @@
+.seat{
+    width:12%;
+    height: 30px;
+    border-radius:50%;
+    margin:8px 2%;
+    color:#222222;
+    text-align: center;
+    float: left;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    border:1px solid black;
+}
+
+.selected{
+    background-color: #01c73c;
+}
+.disable{
+    background-color: #bbb;
+    cursor:not-allowed;
+}

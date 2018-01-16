@@ -1,0 +1,44 @@
+<div id="infomation">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12 infoDetail">
+      <div class="row left">
+        <p class="title">Ngày phát hành</p>
+        <p class="contentInfo">{{movieDetail.ReleaseDate}}</p>
+      </div>
+      <div class="row left">
+        <p class="title">Đạo diễn</p>
+        <p class="contentInfo">{{movieDetail.Producer}}</p>
+      </div>
+      <div class="row left">
+        <p class="title">Giám đốc</p>
+        <p class="contentInfo">{{movieDetail.Director}}</p>
+      </div>
+      <div class="row left">
+        <p class="title">Thể loại</p>
+        <p class="contentInfo">{{movieDetail.Genre}}</p>
+      </div>
+      <div class="row left">
+        <p class="title">Định dạng</p>
+        <p class="contentInfo">2D/Digital</p>
+      </div>
+      <div class="row left">
+        <p class="title">Quốc gia SX</p>
+        <p class="contentInfo">Mỹ</p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12 infoDetail">
+      <div class="row right">
+        <p class="title">Nội dung</p>
+      </div>
+      <div class="row right">
+        <p class="contentInfoFull">{{movieDetail.Description}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <h3 style="color:#fff">Trailer và hình ảnh</h3>
+      <iframe width="100%" height="450px" [src]="movieDetail.TrailerURI" frameborder="0" allowfullscreen class="trailer"></iframe>
+    </div>
+  </div>
+</div>

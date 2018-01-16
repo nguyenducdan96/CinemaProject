@@ -1,0 +1,77 @@
+<div class="col-md-8 contentleft">
+  <div class="row topContent">
+    <div class="col-md-2 col-lg-1 col-xs-3 logo-booking">
+      <img src="assets/Images/cinema_logo/bhd.png" class="img-responsive">
+    </div>
+    <div class="col-md-6 col-xs-6">
+      <h5>BHD Star
+        <span> - Bitexco</span>
+      </h5>
+      <p>{{dateShow}} - {{timeShow}} - {{roomShow}}</p>
+    </div>
+  </div>
+  <div class="row screen">
+    <img src="assets/Images/bg-screen.png" />
+    <div class="row listSeat">
+      <app-seat #t *ngFor="let seat of listSeat.Seats; let n = index" [seatID]="seat.SeatName" [isChoose]="seat.Status"  (eventBooking)="bookSeat($event, seat.SeatName, n, seat.Price)"></app-seat>
+    </div>
+    <div class="note row">
+      <div class="seat-note">
+        <div class="seatAvaible"></div>
+        <p>Ghế trống</p>
+      </div>
+      <div class="seat-note">
+        <div class="seatSelected"></div>
+        <p>Ghế đang chọn</p>
+      </div>
+      <div class="seat-note">
+        <div class="seatDisable"></div>
+        <p>Ghế đã chọn</p>
+      </div>
+      <div class="seat-note">
+        <i class="fa fa-window-close"></i>
+        <p>Ghế không thể chọn</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 contentfullright" id="rightcheckout">
+  <div class="row total">
+    <p id="priceTotal">{{priceTotal}}.000 đ</p>
+  </div>
+  <div class="row filmInfo">
+    <div>
+      <img class="filmImg" [src]="urlHost + movieDetail.Image">
+      <div class="filmname">
+        <p>
+          <span class="limit-age">C13</span>
+          <b>{{movieDetail.Title}}</b>
+        </p>
+        <p>BHD Star Bitexco </p>
+        <p>{{dateShow}} - {{timeShow}} - {{roomShow}}</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="row seatInfo">
+    <div class="info col-sm-7">
+      <span>Ghế: </span>
+      <span id="seatSelected">{{seatNameSelected}}</span>
+    </div>
+    <div class="col-sm-5" id="seatPrice">{{priceTicketTotal}}.000 đ</div>
+  </div>
+  <div class="row comboInfo">
+    <div class="info col-sm-7">
+      <select #combo (change)="getPriceCombo(combo.value)" class="typeCombo">
+        <option value="0">Chọn Combo</option>
+        <option value="1">Combo 2 Nước 1 Bắp</option>
+        <option value="2">Combo 1 Nước 1 Bắp</option>
+        <option value="3">Combo 2 nước</option>
+        <option value="4">Bắp</option>
+        <option value="5">Nước</option>
+      </select>
+    </div>
+    <div class="col-sm-5" id="priceCombo">{{priceCombo}}.000 đ</div>
+  </div>
+  <button type="button" (click)="BookTicket()" class="btn btn-buyticket">Đặt Vé</button>
+</div>

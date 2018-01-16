@@ -1,0 +1,68 @@
+<form role="form" id="register-form" #registerForm="ngForm" (ngSubmit)="register(registerForm.valid)">
+  <div class="form-group">
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name" required #firstname="ngModel"
+          [(ngModel)]="user.FirstName">
+        <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)" class="alert alert-danger">
+          <div *ngIf="firstname.errors.required">
+            Vui lòng nhập họ!
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <input type="text" name="lastname" id="lastname" tabindex="2" class="form-control" placeholder="Last Name" required #lastname="ngModel"
+        [(ngModel)]="user.LastName">
+        <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)" class="alert alert-danger">
+          <div *ngIf="lastname.errors.required">
+            Vui lòng nhập tên!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>njj
+  <div class="form-group">
+    <input type="text" name="username" id="username" tabindex="3" class="form-control" placeholder="Username" required #username="ngModel"
+    [(ngModel)]="user.UserName">
+    <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+      <div *ngIf="username.errors.required">
+        Vui lòng nhập tên đăng nhập!
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="password" name="password" id="password" tabindex="4" class="form-control" placeholder="Password" required #password="ngModel"
+    [(ngModel)]="user.PassWord">
+    <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+      <div *ngIf="password.errors.required">
+        Vui lòng nhập mật khẩu!
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="password" name="confirmPassword" id="confirmPassword" tabindex="5" class="form-control" placeholder="Confirm Password"
+      required #confirmPassword="ngModel" ngModel>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" id="email" tabindex="6" class="form-control" placeholder="Email" required #email="ngModel"
+      ngModel pattern="^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]+$">
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-sm-6">
+        <my-date-picker name="dateOfBirth" id="dateOfBirth" tabindex="7" #dateOfBirth="ngModel" ngModel></my-date-picker>
+      </div>
+      <div class="col-sm-6">
+        <input type="text" name="phone" id="phone" tabindex="8" class="form-control" placeholder="Phone" required #phone="ngModel"
+          ngModel pattern="^(01[2689]|09|08)[0-9]{8}$">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <input type="submit" name="register-submit" id="register-submit" class="form-control btn btn-register" value="Register Now">
+      </div>
+    </div>
+  </div>
+</form>

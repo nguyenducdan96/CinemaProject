@@ -1,0 +1,208 @@
+#showtimes-content {
+  background: #fff;
+}
+
+#showtimes-content .group-cinema {
+  border-right: 1px solid #EBEBEC;
+}
+
+#showtimes-content .group-cinema li {
+  float: none;
+  cursor: pointer;
+}
+
+#showtimes-content .group-cinema li a {
+  padding: 20px;
+  position: relative;
+  opacity: 0.5;
+  transition: all .2s;
+  border: none;
+}
+
+#showtimes-content .group-cinema li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translateX(-50%);
+  border-bottom: 1px solid #ccc;
+  border-color: rgba(238, 238, 238, 0.88);
+}
+
+#showtimes-content .group-cinema li a:hover {
+  opacity: 1;
+}
+
+#showtimes-content .group-cinema li.active a {
+  opacity: 1;
+}
+
+#showtimes-content .group-cinema li:last-child a:after {
+  border-bottom: none;
+}
+
+#showtimes-content .group-cinema img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+#showtimes-content .group-cinema p {
+  display: inline-block;
+  font-size: 15px;
+  color: #000000;
+}
+
+#showtimes-content .wrap-day {
+  float: left;
+  clear: both;
+  padding: 20px 20px 10px 20px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#showtimes-content .wrap-day:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translateX(-50%);
+  border-top: 1px solid #ccc;
+  border-color: rgba(238, 238, 238, 0.88);
+}
+
+#showtimes-content .wrap-day:last-child:after {
+  border-bottom: unset;
+}
+
+#showtimes-content .wrap-day {
+  border: none;
+  margin-bottom: 0;
+}
+
+#showtimes-content .wrap-day li {
+  display: inline-block;
+  float: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#showtimes-content .wrap-day li a {
+  font-size: 16px;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+#showtimes-content .wrap-day li a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#showtimes-content .wrap-day li.active a,
+#showtimes-content .wrap-day li.active a:focus,
+#showtimes-content .wrap-day li.active a:hover {
+  background-color: transparent;
+  border: none;
+  color: #7ed321;
+}
+
+#showtimes-content .wrap-booking {
+  width: 100%;
+  padding: 20px;
+  float: left;
+  overflow-y: auto;
+}
+
+#showtimes-content .wrap-movie {
+  float: left;
+  clear: both;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#showtimes-content .cinema-info {
+  padding-bottom: 20px;
+  float: left;
+  clear: both;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#showtimes-content .cinema-img {
+  width: 50px;
+  float: left;
+  border: 1px solid #EBEBEC;
+}
+
+#showtimes-content .wrap-info {
+  padding-left: 10px !important;
+  height: 50px;
+  overflow: hidden;
+}
+
+#showtimes-content .wrap-info .head-info {
+  display: block;
+  font-size: 16px;
+  padding-top: 4px;
+  margin-bottom: 5px;
+}
+
+#showtimes-content .wrap-info .address-info {
+  float: left;
+  width: 100%;
+  margin: 0;
+  font-size: 13px;
+  color: #9B9B9B;
+}
+
+#showtimes-content .wrap-showtime {
+  width: 100%;
+  clear: both;
+}
+
+#showtimes-content .version-icon {
+  width: 30px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+#showtimes-content .sessions {
+  padding-left: 0;
+  padding-top: 0;
+  line-height: 1;
+  vertical-align: top;
+  display: inline-block !important;
+  width: calc(100% - 80px) !important;
+}
+
+#showtimes-content .session {
+  color: #417505;
+  float: left;
+  font-size: 24px;
+  font-weight: 400;
+  color: #417500;
+  margin: 0 3px 15px 0;
+  transition: all .2s;
+  text-decoration: none;
+  width: 15%;
+}
+
+#showtimes-content .session:hover {
+  color: #FB4226;
+  cursor: pointer;
+}

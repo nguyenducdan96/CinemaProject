@@ -1,0 +1,32 @@
+#infomation .infoDetail {
+  padding: 0 7px;
+  margin-bottom: 0;
+}
+
+#infomation .left,
+#infomation .right {
+  margin-bottom: 10px;
+}
+
+#infomation .title {
+  width: 35%;
+  float: left;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+#infomation .contentInfo {
+  width: 40%;
+  float: left;
+  font-size: 14px;
+  color: #E9E9E9;
+}
+
+#infomation .contentInfoFull {
+  text-align: justify;
+  white-space: pre-wrap;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  color: #E9E9E9;
+}
